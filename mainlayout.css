@@ -1,9 +1,7 @@
 body{
 	background-color: #87ceeb;
-	height: 690px;
-	min-width: 950px;
+	
 }
-
 #navigation  li{ /* set out the navigation links */
 	background-color: yellow;
 	padding-left: 1%;
@@ -15,27 +13,29 @@ body{
 	display: inline-block;
 	font-size: 140%;
 }
-#navigation li a:link{
+#navigation li a:link{/* set link colour */
 	color: red;
 }
-#nav{
+#nav{ /* set heading image */
+	width: 100%;
+	height: 213px;
 	display: inline-block;
 	background-image: url(./Images/toppic.jpg);
 	width: 100%;
 	height: 178px;
 	background-repeat: no-repeat;
-	min-width: 800px;
+	
 }
-#leftside{
+#leftside{ /* home page left box */
 	position: relative;
 	top: 10px;
 	height: 400px;
 	width: 180px;
 	border: solid 2px black;
 }
-#content{
+#content{ /* home page right box */
 	position: absolute;
-	top: 258px;
+	top: 260px;
 	left: 220px;
 	height: 400px;
 	min-width: 500px;
@@ -45,38 +45,14 @@ body{
 	margin-right: 10px;
 	font-size: 120%;
 }
-#content p{
+#content p{ /* home page p margin */
 	margin-top: 0px;
 }
-#content h1{
+#content h1{ /* home page h1 */
 	font-size: 160%;
 	color: #cd5c5c;
-	
 }
-
-#bottomnavigation  li{ /* set out the navigation links */
-	position: relative;
-	
-	margin-top: 10px;
-	background-color: pink;
-	padding-left: 1%;
-	padding-right: 1%;
-	margin-left: 0.5%;
-	border: solid 2px purple;
-	border-radius: 10px;
-	list-style-type: none;
-	display: inline-block;
-	font-size: 110%;
-	
-	
-}
-#bottomnavigation li a:link{
-	color: blue;
-}
-#bottomnavigation li a:active{
-	color: red;
-}
-#pagename{
+#pagename{ /* display each page name */
 	text-shadow: 4px 1px yellow;
 	color: #87ceeb;
 	height: 30px;
@@ -84,7 +60,8 @@ body{
 	padding-bottom: 8px;
 	border-bottom: double 4px blue;
 }
-#peoplecolumn1{
+
+#specialguests{ /* set up people/special guests scrolling display */
 	height: 58%;
 	position: absolute;
 	top: 300px;
@@ -93,11 +70,9 @@ body{
 	padding-left: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	
-	
 }
-#peoplecolumn2{
-	height: 58%;
+#lifemembers{ /* set up people/life members scrolling display */
+	height: 33%;
 	position: absolute;
 	top: 300px;
 	left: 50%;
@@ -106,33 +81,52 @@ body{
 	padding-left: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	
 	margin-right: 15px;
 }
-#peoplecolumn1 img, #peoplecolumn2 img{
+#honouredmembers{ /* set up people/honoured members scrolling display */
+	height: 20%;
+	position: absolute;
+	top: 570px;
+	left: 50%;
+	width: 47%;
+	padding-right: 10px;
+	padding-left: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-right: 15px;
+}
+#specialguests img, #lifemembers img{ /* pad images people */
 	padding-right: 15px;
 }
-#peoplecolumn1 h3, #peoplecolumn2 h3{
+#honouredmembers img{ /* pad images people */
+	padding-bottom: 0px;
+	
+}
+#specialguests h3, #lifemembers h3{ /* make gap around images people */
 	margin-bottom: 5px;
 	margin-top: 10px;
 }
-#peoplecolumn1 p, #peoplecolumn2 p{
+#specialguests p, #lifemembers p{ /* make gap around images people */
 	
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-#people1{
+#peopleheading1{ /* set people/special guests position */
 	position: absolute;
 	top: 245px;
 	left: 20px;
-	min-width: 400px;
 }
-#people2{
+#peopleheading2{ /* set people/lifetime members position */
 	position: absolute;
 	top: 245px;
 	left: 62%;
 }
-#committee{
+#peopleheading3{ /* set people/honoured members position */
+	position: absolute;
+	top: 520px;
+	left: 62%;
+}
+#committee{ /* set about us/committee members list position */
 	position: absolute;
 	
 }
@@ -186,7 +180,6 @@ body{
 #benefactors{
 	width: 30%;
 	text-align: center;
-	min-width: 300px;
 	font-size: 90%;
 	font-family:'lucida calligraphy'
 }
@@ -200,9 +193,76 @@ body{
 	min-width: 600px;
 	
 }
-#sponsors{
-
+#townsvillelogo{
+	position: absolute;
+	top: 78px;
+	left: 90%;
 }
+#moneyshot ul{
+	width: 100%;
+	height: 60px;
+	display: inline-block;
+}
+#sponsors{
+	position: absolute;
+	top: 350px;
+	left: 45%;
+}
+#sponsors img{
+	margin: 15px;
+}
+#thumbs, #thumbs1, #thumbs2{
+	width: 40%;
+}
+
+#thumbs img:hover{
+	position: absolute;
+	top: 330px;
+	left: 58%;
+	height:45%;
+	width: 40%;
+	border: red 2px solid;
+}
+
+#imgtext {
+	font-size: 80%;
+	position: relative;
+	display: table-caption;
+	text-align: center;
+	display: inline-block;
+}
+
+#thumbs img, #thumbs1 img, #thumbs2 img{
+	position: relative;
+	height:60px;
+	width: 80px;
+}
+
+#thumbs1 img:hover{
+	position: absolute;
+	top: 650px;
+	left: 58%;
+	height:45%;
+	width: 40%;
+	border: red 2px solid;
+} 
+
+#thumbs2 img:hover{
+	position: absolute;
+	top: 990px;
+	left: 58%;
+	height:45%;
+	width: 40%;
+	border: red 2px solid;
+}
+#update{
+	position: absolute;
+	top: 205px;
+	left: 70%;
+	text-shadow: none;
+	color: black;
+}
+
 
 
 
