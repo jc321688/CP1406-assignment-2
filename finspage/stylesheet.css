@@ -334,4 +334,5 @@ position:absolute;
 	max-width:1260px;
 } 
 #push {height: 30px;
+clear:both;
 }
