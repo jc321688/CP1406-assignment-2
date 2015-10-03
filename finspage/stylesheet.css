@@ -1,12 +1,18 @@
+html,body{
+    height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
 body {
 	background-color: #CCCCCC;
 	font-family: veranda, arial, geneva, arial black;
 	line-height: 1.5em;
-
-}
+	}
 .container{
 	max-width:1260px;
-	margin: 0px auto;
+	min-height: 100%;
+margin: 0px auto;
+position:relative;
 }
 img { 
 border: 1px solid #006699;
@@ -235,6 +241,11 @@ border-radius: 0px;
 	font-size: 90%;
 	font-family: 'lucida calligraphy';
 }
+#benefactors p{
+	border-color: black;
+	max-width: 370px;
+	margin: 0 auto;
+}
 #supportcolumn2 {
 	font-size: 90%;
 	
@@ -244,18 +255,15 @@ border-radius: 0px;
 
 }
 
-#moneyshot ul {
-	width: 100%;
-	height: 60px;
-	display: inline-block;
-}
-#sponsors {
-	max-width: auto;
+.container #sponsors {
+	width: 1705px;
+	margin: 0 auto;
+	margin-left: -223px;
 }
 #sponsors img {
 	margin: 15px;
 	text-align:center;
-	clear:right;
+	clear:both;
 }
 #thumbs, #thumbs1, #thumbs2 {
 	width: 40%;
@@ -312,7 +320,6 @@ a:hover {
 }
 #footer {
 font-family:Arial;
-padding: .2em 1em;
 background-color: #006699;
 clear:both;
 border-bottom-left-radius: 8px;
@@ -320,8 +327,11 @@ border-bottom-right-radius: 8px;
 color: #efe5d0;
 text-align: center;
 font-size: 90%;
-position:relative;
-bottom: 2px;
-	width:98%;
+position:absolute;
+   bottom:1px;
+   width:100%; 
+	height: 23px;
+	max-width:1260px;
 } 
-
+#push {height: 30px;
+}
