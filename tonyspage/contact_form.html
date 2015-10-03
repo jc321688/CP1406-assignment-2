@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>contact form</title>
+    <link rel="stylesheet" href="formlayout.css" type="text/css"/>
+</head>
+<body>
+	<h1>Contact Us</h1><!-- heading -->
+		<p class="request">Please fill out the information below &nbsp; (Required fields are shown by *)</p>
+		<p class="request">We will get back to you as soon as possible</p><!-- instructions --> 
+	
+		<form action="http://ditwebtsv.jcu.edu.au/~sci-­lmw1/forms.php" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+		
+		<p>
+			<label for="firstname">First Name * </label><!-- firstname data -->
+			<input type="text" name="firstname" id="firstname" size="40" autofocus onKeyUp="firstnameEntered(this);"/>
+		</p>
+		<p>
+			<label for="lastname">Last Name * </label><!-- second name data -->
+			<input type="text" name="lastname" id="lastname" size="40" onKeyUp="lastnameEntered(this);"/>
+		</p>
+		<p>
+			<label for="email">email Address * </label><!-- email data -->
+			<input type="text" name="email" id="email" size="50" onKeyUp="emailEntered(this);"/>
+		</p>
+		<p>
+			<label for="phone">Phone </label><!-- phone data -->
+			<input type="text" name="phone" id="phone" size="10" onKeyUp="phoneEntered(this);"/>
+		</p>
+		<p>
+			<label for="comments">Questions/Comments</label><!-- comments data -->
+			<textarea name="comments" cols="50" rows="4" id="comments" onKeyUp="updateCharacters(10)"></textarea>
+		</p>
+		<div id="joinfree"><!-- advertising -->
+			<p>
+				By joining our supporters and volunteers, you will have access to :
+				<ul>
+					<li>updates of upcoming events</li>
+					<li>discounts on tickets, posters and other souvenir merchandise</li>
+					<li>lottery of backstage passes to meet our celebrity players</li>
+					<li>free performance programs</li>
+				</ul>
+				 Joining is free!! &nbsp; We are also very interested in developing young musicians.
+			</p>
+		</div>
+		<fieldset id="join">
+            <legend id="joinLegend">Help us Culture the North</legend>
+            <input name="join" type="checkbox" id="areaSchedule" value="schedule" onChange="checkArea()"/>
+            <label for="areaSchedule">I would like to join our Orchestral Supporters group</label>
+            
+            
+        </fieldset>
+		
+		<div id="submission">
+            <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
+            <input type="reset" value="Clear Form" name="Reset" id="Reset" />
+            &nbsp; or &nbsp;
+            <input type="submit" value="Submit Form"/>
+        </div>
+		</form>
+	<script src="scriptsBRO.js"></script>
+</body>
+</html>

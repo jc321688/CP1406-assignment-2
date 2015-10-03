@@ -181,7 +181,7 @@ body{
 	width: 30%;
 	text-align: center;
 	font-size: 90%;
-	font-family:'lucida calligraphy'
+	font-family:'lucida calligraphy';
 }
 #supportcolumn2{
 	font-size: 90%;
@@ -213,8 +213,11 @@ body{
 }
 #thumbs, #thumbs1, #thumbs2{
 	width: 40%;
+	
 }
-
+#hsn{
+	position: a;
+}
 #thumbs img:hover{
 	position: absolute;
 	top: 330px;
