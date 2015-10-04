@@ -140,6 +140,23 @@ a.content:link {
 	margin: 30px;
 	float: left;
 }
+#book {
+	text-decoration: none;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	background-color: #E6E6DC;
+	padding: 15px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	margin: 30px;
+	float: left;
+	min-height: 60px;
+	line-height: 60px;
+}
 p { /* home page p margin */
 	margin-top: 0px;
 	border: solid 2px #006699;
@@ -308,10 +325,14 @@ border-radius: 0px;
 	margin: 0 auto;
 	margin-left: -223px;
 }
+
+#sponsors{
+		clear:both;
+}
+
 #sponsors img {
 	margin: 15px;
 	text-align:center;
-	clear:both;
 }
 
 
