@@ -8,3 +8,12 @@ function getRandomImage(imgAr, path) {
     var imgStr = '<img src="' + path + img + '" alt = "">';
     document.write(imgStr); document.close();
 }
+
+function showImage(imgName) {
+     var curImage = document.getElementById('currentImg');
+     var thePath = 'Gallery/';
+     var theSource = thePath + imgName;
+	  curImage.src = theSource;
+     curImage.alt = imgName;
+     curImage.title = imgName;
+}

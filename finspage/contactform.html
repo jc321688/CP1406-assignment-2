@@ -1,113 +1,178 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
 <script src="javaScript.js">
 
 </script>
 <script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
-<meta http-equiv="Content-Language" content="en-au" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Barrier Reef Orchestra</title>
-<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<meta charset="UTF-8">
+<title>Sign-up</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<a name="top"></a>
-<table id="Mainbody"  cellpadding="10" cellspacing="0" >
-  <tbody>
-      <tr>
+<div class="container">
+<div id="nav">
+  <div id="navigation"><!-- page navigation links -->
+    <ul>
+      <li><a class="navButton" href="index.html">Home</a></li>
+      <li><a class="navButton" href="past_events.html">Past Events</a></li>
+      <li><a class="navButton" href="news.html">News</a></li>
+      <li><a class="navButton" href="gallary.html">Gallery</a></li>
+      <li><a class="navButton" href="people.html">People</a></li>
+      <li><a class="navButton" href="supporters.html">Supporters</a></li>
+      <li><a class="navButton" href="about_us.html">About Us</a></li>
+    </ul>
+  </div>
+</div>
+<div id="leftside"> <a class="button" href="contactform.html"> <strong>Become a Member or Player</strong></a><br><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="content" href="news.html">
+  <p class="content"><strong> A Music Feast<br>
+    <br>
+    7th November</strong><br>
+    <br>
+    <em>See News Page</em> </p><br><br><br>
+  </a> <img class="leftLogo" src="Images/townsville-council-logo.jpg" width="85" height="110" alt=""/> </div>
+  <span class="randomImage">
+   <script type="text/javascript">getRandomImage(random_images_array);</script>
+   <br>
+   <script type="text/javascript">getRandomImage(random_images_array);</script>
+   <br>
+   <script type="text/javascript">getRandomImage(random_images_array);</script></span>
+<div id="content">
+  <h1><br>
+    Join The Barrier Reef Orchestra </h1>
+  <div id="member">
+    <h2>Become a Player<br>
+      <br>
+    </h2>
+    <!-- heading -->
+	  <p class="request">Please fill out the information below &nbsp; (Required fields are shown by *)</p>
+	  <p class="request">We will get back to you as soon as possible<br>
+	    <br>
+      </p>
+	  <!-- instructions --> 
+	
+		<form action="http://ditwebtsv.jcu.edu.au/~sci-­lmw1/forms.php" method="post" name="mainForm" class="mainForm" onsubmit="return checkForm();">
+		
+		<p>
+			<label for="firstname">First Name * </label><!-- firstname data -->
+			<input type="text" name="firstname" class="name" autofocus onKeyUp="firstnameEntered(this);"/>
+		</p>
+		<p>
+			<label for="lastname">Last Name * </label><!-- second name data -->
+			<input type="text" name="lastname" class="name" onKeyUp="lastnameEntered(this);"/>
+		</p>
+		<p>
+			<label for="email">email Address * </label><!-- email data -->
+			<input type="text" name="email" class="email" onKeyUp="emailEntered(this);"/>
+		</p>
+		<p>
+			<label for="phone">Phone </label><!-- phone data -->
+			<input type="text" name="phone" class="phone" onKeyUp="phoneEntered(this);"/>
+		</p>
+		<p>
+			<label for="comments">Questions/Comments</label><!-- comments data -->
+			<textarea name="comments" rows="4" onKeyUp="updateCharacters(10)"></textarea>
+		</p>
+		<div><!-- advertising -->
+			<p>
+				By joining our supporters and volunteers, you will have access to :
+                </p>
+				<ul>
+					<li>updates of upcoming events</li>
+					<li>discounts on tickets, posters and other souvenir merchandise</li>
+					<li>lottery of backstage passes to meet our celebrity players</li>
+					<li>free performance programs</li>
+				</ul>
+Joining is free!! &nbsp; We are also very interested in developing young musicians.<br>
+<br>
+        </div>
+		<fieldset>
+            <legend>Help us Culture the North</legend>
+            <input name="join" type="checkbox" id="areaSchedule" value="schedule" onChange="checkArea()"/>
+            <label for="areaSchedule">I would like to join our Orchestral Supporters group</label>
+            
+            
+        </fieldset>
+		
+            <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
+            <input type="reset" value="Clear Form" name="Reset"/>
+            &nbsp; or &nbsp;
+            <input type="submit" value="Submit Form"/>
     
-    <td id="SideBarLeft" valign="top"><div style="width:10px;height:100px;"></div>
-      <script type="text/javascript">getRandomImage(random_images_array);</script>
-      <div style="width:10px;height:50px;"></div>
-      <img border="0" src="SiteImages/TCCtext100.gif"  alt="TCC logo" />
-      <div style="width:10px;height:50px;"></div>
-      <script type="text/javascript">getRandomImage(random_images_array);</script>
-      <div style="width:10px;height:50px;"></div>
-      <img border="0" src="SiteImages/TCCtext100.gif"  alt="TCC logo" /></td>
-    <!-- End of SideBarLeft    -->
-    <td valign="top"><!-- Start of content    -->
-      
-      <div style="width:10px;height:100px;"></div>
-      <table style="width:750px; border : 1px solid black">
-        <tbody>
-          <tr>
-            <td valign="top" style="text-align:left;"><span style="text-align:left; font-weight:normal; font-size:12pt; color:#900;"> <b>Become a Member or Player</b> </span> <span style="text-align:left; font-weight:normal; font-size:10pt; color:black;"> <br />
-              Interested in becoming a member of, or a player in, the Orchestra? </span></td>
-            <td valign="top" style="text-align:left;"><span style="text-align:left; font-weight:normal; font-size:12pt; color:#900;"> <b>Sponsor or Donate to the Orchestra</b> </span> <span style="text-align:left; font-weight:normal; font-size:10pt; color:black;"> <br />
-              The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible. </span></td>
-          </tr>
-        </tbody>
-      </table>
-      <hr class="HR" />
-      <form name="htmlform" method="post" action="html_form_send.php">
-        <table width="450px">
-            </tr>
-          
-          <tr>
-            <td valign="top"><label for="first_name">First Name *</label></td>
-            <td valign="top"><input  type="text" name="first_name" maxlength="50" size="30"></td>
-          </tr>
-          <tr>
-            <td valign="top""><label for="last_name">Last Name *</label></td>
-            <td valign="top"><input  type="text" name="last_name" maxlength="50" size="30"></td>
-          </tr>
-          <tr>
-            <td valign="top"><label for="email">Email Address *</label></td>
-            <td valign="top"><input  type="text" name="email" maxlength="80" size="30"></td>
-          </tr>
-          <tr>
-            <td valign="top"><label for="telephone">Telephone Number</label></td>
-            <td valign="top"><input  type="text" name="telephone" maxlength="30" size="30"></td>
-          </tr>
-          <tr>
-            <td valign="top"><label for="comments">Comments *</label></td>
-            <td valign="top"><textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea></td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align:center"><input type="submit" value="Submit"></td>
-          </tr>
-        </table>
-      </form></td>
-      </tr>
+		</form>
+	<script src="scriptsBRO.js"></script>
     
-    <!-- start of FooterBar    -->
-    <tr>
-      <td colspan="2"><table width="100%" style="text-align:center">
-          <tbody>
-            <tr>
-              <td style="background-color:#900;height:2px"></td>
-            </tr>
-            <tr class="NavBar">
-              <td><a href="#top">Return to Top</a></td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- End of FooterBar    --></td>
-    </tr>
-  </tbody>
-</table>
-<!-- End of Mainbody    --> 
-<img src="SiteImages/BROpageheader.jpg" alt="BRO logo" align="left" Style="position : fixed ;top : 0px ;left : 0px ;" />
-<table id="TopBanner">
-  <tbody>
-    <tr class="NavBar">
-      <td width="16%"><a href="index.htm">Home</a></td>
-      <td width="16%"><a href="BROnews.htm">News</a></td>
-      <td width="16%"><a href="BROgallery.htm">Gallery</a></td>
-      <td width="17%"><a href="BROsupporters.htm">Supporters</a></td>
-      <td width="16%"><a href="BROpeople.htm">People</a></td>
-      <td><a href="BROabout.htm">About Us</a></td>
-    </tr>
-    <tr>
-      <td colspan="6" align="center"><span style="font-size:16pt">Contact Details<br />
-        </span> <span style="font-size:8pt"><br />
-        Updated 25 September 2014</span></td>
-    </tr>
-  </tbody>
-</table>
-<!-- End of TopBanner    -->
+    
+    </div>
+    
+    <div id="player">
+  <h2>Become an Orchestral Benefactor</h2>
+		<p>Please fill out the information below &nbsp; (Required fields are shown by *)</p>
+		<p>We will contact you as soon as possible to arrange a time when you are free to interview us</p>
+	
+	<form action="http://ditwebtsv.jcu.edu.au/~sci-­lmw1/forms.php" method="post" name="mainForm" class="mainForm" onsubmit="return checkForm();">
+		<p>
+			<label for="firstname">First Name * </label>
+			<input type="text" name="name" class="name" autofocus onKeyUp="nameEntered(this);"/>
+		</p>
+		<p>
+			<label for="lastname">Last Name * </label>
+			<input type="text" name="name" class="name" autofocus onKeyUp="nameEntered(this);"/>
+		</p>
+		<p>
+			<label for="email">email Address * </label>
+			<input type="text" name="name" class="email" autofocus onKeyUp="nameEntered(this);"/>
+		</p>
+		<p>
+			<label for="phone">Phone * </label>
+			<input type="text" name="name" class="phone" autofocus onKeyUp="nameEntered(this);"/>
+		</p>
+		<p>
+			<label for="comments">Questions/Comments</label>
+			<textarea name="comments" rows="4" onKeyUp="updateCharacters(10)"></textarea>
+		</p>
+		<div>
+			<p>
+				By joining our benefactors, you will have access to :
+                </p>
+				<ul>
+					<li>free orchestra website advertising</li>
+					<li>updates of upcoming events</li>
+					<li>2 free preferential seats at all performances</li>
+					<li>up to 4 discounted preferential seats for your guests</li>
+					<li>backstage passes to mix with our celeb players for you and your guests<br>
+					  <br>
+				  </li>
+				</ul>
+			
+		</div>
+		<fieldset>
+			<legend>Help us Culture the North</legend>
+           <label for="areaSchedule">Join our Orchestral Benefactors and bring culture North</label>                        
+		</fieldset>		
+		<div>
+			<!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
+			<input type="reset" value="Clear Form" name="Reset"/>
+			&nbsp; or &nbsp;
+			<input type="submit" value="Submit Form"/>
+		</div>
+	</form>
+<script src="scriptsBRO.js"></script>
+    
+    </div>
+</div>
+    <div id="push"></div>
+<div id="footer"> &copy; 2015 www.nqorchestra.com.au.  All Rights Reserved. </div>
+</div>
 </body>
 </html>

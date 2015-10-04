@@ -20,11 +20,14 @@ margin: 5px;
 }
 .randomImage{
 	float:right;
-	margin-top: 10px;
+	margin: 0px;
+	margin-top: 20px;
 	text-align:center;
-	background-color:#686868;
-
 }
+h2 {
+	margin-left:10%
+}
+
 #navigation li { /* set out the navigation links */
 	padding-left: 0.5%;
 	padding-right: 0.5%;
@@ -147,6 +150,7 @@ p { /* home page p margin */
 h1 { /* home page h1 */
 	font-size: 160%;
 	color: #006699;
+	text-align:center;
 }
 #specialguests { /* set up people/special guests scrolling display */
 	height: 450px;
@@ -156,6 +160,44 @@ h1 { /* home page h1 */
 	padding-left: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+#news { 
+	height: 570px;
+	border: solid 2px black;
+	border-radius: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#news img{
+	max-width: 30%;
+	float: left;
+}
+#events { 
+	height: 665px;
+	border: solid 2px black;
+	border-radius: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+#events img{
+	max-width: 100%;
+
+	float: left;
+}
+.centre{
+	padding-left: auto;
+	padding-right: auto;
 }
 #lifemembers { /* set up people/life members scrolling display */
 height: 450px;
@@ -165,6 +207,8 @@ border: solid 2px black;
 	padding-left: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 #honouredmembers { /* set up people/honoured members scrolling display */
 	overflow-x: hidden;
@@ -204,7 +248,9 @@ p.positions1 {
 	border-radius: 0px;
 	border-color: black;
 	display:block;
-	float:none;
+
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	
 }
 .positions1 {
@@ -216,6 +262,8 @@ border-radius: 0px;
 	border-color: black;
 	margin-left: 5px;
 	display:inline-block;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	
 }
 #historytitle {
@@ -265,17 +313,8 @@ border-radius: 0px;
 	text-align:center;
 	clear:both;
 }
-#thumbs, #thumbs1, #thumbs2 {
-	width: 40%;
-}
-#thumbs img:hover {
-	position: absolute;
-	top: 330px;
-	left: 58%;
-	height: 45%;
-	width: 40%;
-	border: red 2px solid;
-}
+
+
 .imgtext {
 	font-size: 130%;
 	position: relative;
@@ -287,26 +326,35 @@ p.imgtext {
 	margin: 10px;
 }
 
-#thumbs img, #thumbs1 img, #thumbs2 img {
-	position: relative;
+.thumbs {
+		max-width: 61%;
+}
+
+.thumbs img {
 	height: 60px;
 	width: 80px;
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-#thumbs1 img:hover {
-	position: absolute;
-	top: 650px;
-	left: 58%;
-	height: 45%;
-	width: 40%;
-	border: red 2px solid;
+.thumbs img:hover {
+	-webkit-filter: grayscale(100%) blur(1px);
+	filter: grayscale(100%) blur(1px);	
 }
-#thumbs2 img:hover {
-	position: absolute;
-	top: 990px;
-	left: 58%;
-	height: 45%;
-	width: 40%;
-	border: red 2px solid;
+
+
+#rightDisplay {
+	position:fixed;
+	top: 190px;
+	left: 55%;
+}
+#rightDisplay img {
+	border: #006699 2px solid;
+	border-radius: 5px;
+}
+.original{
+
 }
 
 a:link {
@@ -318,6 +366,61 @@ a:visited {
 a:hover {
 	color: #CCCCCC;
 }
+
+
+#member{
+	float:left;
+	max-width: 48%;
+	background:#006699;
+	padding: 5px;
+	border:2px solid black; 
+	border-radius: 8px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	
+}
+#member p{
+	border-color:black;
+}
+
+#player{
+	float:right;
+	max-width: 48%;
+	background-color:#E6E6DC;
+	padding: 5px;
+	border:2px solid #006699;
+	border-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+
+
+textarea {
+	width: 97%
+}
+.name {
+	width: 68%
+}
+.email {
+	width: 97%
+}
+.phone {
+	width: 30%
+}
+
+.ptop{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.pmid{
+	border-radius: 0px;
+}
+.pbot{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
 #footer {
 font-family:Arial;
 background-color: #006699;
