@@ -93,6 +93,10 @@ a.current:link {
 	margin-left: 50px;
 	padding-bottom: 50px
 }
+#content img{
+	width: 100%;
+	margin: 0;
+}
 p.content {
 	padding: 5px;
 	margin: 5px;
