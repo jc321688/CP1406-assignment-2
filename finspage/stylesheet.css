@@ -1,5 +1,5 @@
-html,body{
-    height: 100%;
+html, body {
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
 }
@@ -7,27 +7,26 @@ body {
 	background-color: #CCCCCC;
 	font-family: veranda, arial, geneva, arial black;
 	line-height: 1.5em;
-	}
-.container{
-	max-width:1260px;
+}
+.container {
+	max-width: 1260px;
 	min-height: 100%;
-margin: 0px auto;
-position:relative;
+	margin: 0px auto;
+	position: relative;
 }
-img { 
-border: 1px solid #006699;
-margin: 5px;
+img {
+	border: 1px solid #006699;
+	margin: 5px;
 }
-.randomImage{
-	float:right;
+.randomImage {
+	float: right;
 	margin: 0px;
 	margin-top: 20px;
-	text-align:center;
+	text-align: center;
 }
 h2 {
-	margin-left:10%
+	margin-left: 10%
 }
-
 #navigation li { /* set out the navigation links */
 	padding-left: 0.5%;
 	padding-right: 0.5%;
@@ -84,18 +83,16 @@ a.current:link {
 	background-repeat: no-repeat;
 }
 #leftside { /* home page left box */
-float:left;
-background-color:#006699;
+	float: left;
+	background-color: #006699;
 	width: 180px;
 	border: solid 2px black;
-	overflow:auto;
+	overflow: auto;
 }
-
 .leftLogo {
-	margin-left:50px;
+	margin-left: 50px;
 	padding-bottom: 50px
 }
-
 p.content {
 	padding: 5px;
 	margin: 5px;
@@ -116,9 +113,7 @@ a.content:hover {
 a.content:link {
 	color: black;
 }
-
 #content { /* home page right box */
-
 	padding-left: 220px;
 	padding-right: 220px;
 	margin-right: 30px;
@@ -167,7 +162,7 @@ p { /* home page p margin */
 h1 { /* home page h1 */
 	font-size: 160%;
 	color: #006699;
-	text-align:center;
+	text-align: center;
 }
 #specialguests { /* set up people/special guests scrolling display */
 	height: 450px;
@@ -180,7 +175,7 @@ h1 { /* home page h1 */
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
-#news { 
+#news {
 	height: 570px;
 	border: solid 2px black;
 	border-radius: 10px;
@@ -191,12 +186,11 @@ h1 { /* home page h1 */
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
-
-#news img{
+#news img {
 	max-width: 30%;
 	float: left;
 }
-#events { 
+#events {
 	height: 665px;
 	border: solid 2px black;
 	border-radius: 10px;
@@ -207,18 +201,17 @@ h1 { /* home page h1 */
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
-#events img{
+#events img {
 	max-width: 100%;
-
 	float: left;
 }
-.centre{
+.centre {
 	padding-left: auto;
 	padding-right: auto;
 }
 #lifemembers { /* set up people/life members scrolling display */
-height: 450px;
-border: solid 2px black;
+	height: 450px;
+	border: solid 2px black;
 	border-radius: 10px;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -245,57 +238,44 @@ border: solid 2px black;
 	margin-bottom: 5px;
 }
 #peopleheading1 { /* set people/special guests position */
-margin-left: 59px;
+	margin-left: 59px;
 }
 #peopleheading2 { /* set people/lifetime members position */
 	margin-left: 59px;
 }
 #peopleheading3 { /* set people/honoured members position */
-text-align:center;
+	text-align: center;
 }
 #committee { /* set about us/committee members list position */
-	
 }
 p.positions1 {
-
-	
-	
 	width: 145px;
 	text-align: right;
 	border-radius: 0px;
 	border-color: black;
-	display:block;
-
+	display: block;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
-	
 }
 .positions1 {
-	float:left;
+	float: left;
 }
-
 #names {
-border-radius: 0px;
+	border-radius: 0px;
 	border-color: black;
 	margin-left: 5px;
-	display:inline-block;
+	display: inline-block;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	
 }
 #historytitle {
-	
 	text-align: center;
 }
 #history {
 	height: 55%;
-
 	top: 310px;
-	
-	
 	overflow-y: scroll;
 	overflow-x: hidden;
-	
 }
 #supportcolumn1 {
 	font-size: 80%;
@@ -306,51 +286,40 @@ border-radius: 0px;
 	font-size: 90%;
 	font-family: 'lucida calligraphy';
 }
-#benefactors p{
+#benefactors p {
 	border-color: black;
 	max-width: 370px;
 	margin: 0 auto;
 }
 #supportcolumn2 {
 	font-size: 90%;
-	
-	
-	
 	text-align: center;
-
 }
-
 .container #sponsors {
 	width: 1705px;
 	margin: 0 auto;
 	margin-left: -223px;
 }
-
-#sponsors{
-		clear:both;
+#sponsors {
+	clear: both;
 }
-
 #sponsors img {
 	margin: 15px;
-	text-align:center;
+	text-align: center;
 }
-
-
 .imgtext {
 	font-size: 130%;
 	position: relative;
-	display:inline-block;
+	display: inline-block;
 	text-align: center;
 	margin: 5px;
 }
 p.imgtext {
 	margin: 10px;
 }
-
 .thumbs {
-		max-width: 61%;
+	max-width: 61%;
 }
-
 .thumbs img {
 	height: 60px;
 	width: 80px;
@@ -361,12 +330,10 @@ p.imgtext {
 }
 .thumbs img:hover {
 	-webkit-filter: grayscale(100%) blur(1px);
-	filter: grayscale(100%) blur(1px);	
+	filter: grayscale(100%) blur(1px);
 }
-
-
 #rightDisplay {
-	position:fixed;
+	position: fixed;
 	top: 190px;
 	left: 55%;
 }
@@ -374,10 +341,8 @@ p.imgtext {
 	border: #006699 2px solid;
 	border-radius: 5px;
 }
-.original{
-
+.original {
 }
-
 a:link {
 	color: black;
 }
@@ -387,36 +352,29 @@ a:visited {
 a:hover {
 	color: #CCCCCC;
 }
-
-
-#member{
-	float:left;
+#member {
+	float: left;
 	max-width: 48%;
-	background:#006699;
+	background: #006699;
 	padding: 5px;
-	border:2px solid black; 
+	border: 2px solid black;
 	border-radius: 8px;
 	border-bottom-right-radius: 0px;
 	border-top-right-radius: 0px;
-	
 }
-#member p{
-	border-color:black;
+#member p {
+	border-color: black;
 }
-
-#player{
-	float:right;
+#player {
+	float: right;
 	max-width: 48%;
-	background-color:#E6E6DC;
+	background-color: #E6E6DC;
 	padding: 5px;
-	border:2px solid #006699;
+	border: 2px solid #006699;
 	border-radius: 8px;
 	border-bottom-left-radius: 0px;
 	border-top-left-radius: 0px;
 }
-
-
-
 textarea {
 	width: 97%
 }
@@ -429,34 +387,33 @@ textarea {
 .phone {
 	width: 30%
 }
-
-.ptop{
+.ptop {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
-.pmid{
+.pmid {
 	border-radius: 0px;
 }
-.pbot{
+.pbot {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 }
-
 #footer {
-font-family:Arial;
-background-color: #006699;
-clear:both;
-border-bottom-left-radius: 8px;
-border-bottom-right-radius: 8px;
-color: #efe5d0;
-text-align: center;
-font-size: 90%;
-position:absolute;
-   bottom:1px;
-   width:100%; 
+	font-family: Arial;
+	background-color: #006699;
+	clear: both;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	color: #efe5d0;
+	text-align: center;
+	font-size: 90%;
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
 	height: 23px;
-	max-width:1260px;
-} 
-#push {height: 30px;
-clear:both;
+	max-width: 1260px;
+}
+#push {
+	height: 30px;
+	clear: both;
 }
