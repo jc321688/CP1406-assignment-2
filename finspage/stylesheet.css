@@ -379,6 +379,12 @@ a:hover {
 	border-bottom-left-radius: 0px;
 	border-top-left-radius: 0px;
 }
+
+#form {
+	min-width: 750px;
+	float:left;
+}
+
 textarea {
 	width: 97%
 }
