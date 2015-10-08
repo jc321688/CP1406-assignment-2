@@ -6,33 +6,33 @@
     <link rel="stylesheet" href="formlayout.css" type="text/css"/>
 </head>
 <body>
-	<h1>Contact Us</h1><!-- heading -->
+	<h1>Contact Us</h1><!-- form introduction -->
 		<p class="request">Please fill out the information below &nbsp; (Required fields are shown by *)</p>
 		<p class="request">We will get back to you as soon as possible</p><!-- instructions --> 
-	
-		<form action="http://ditwebtsv.jcu.edu.au/~sci-­lmw1/forms.php" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+	<!-- end of form introduction -->
+	<form action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php" method="get" name="mainForm" id="mainForm" onsubmit="return checkContactForm();">
 		
 		<p>
-			<label for="firstname">First Name * </label><!-- firstname data -->
-			<input type="text" name="firstname" id="firstname" size="40" autofocus onKeyUp="firstnameEntered(this);"/>
+			<label for="firstname">First Name * </label><!-- first name data -->
+			<input type="text" name="firstname" id="firstname" size="40" autofocus/>
 		</p>
 		<p>
-			<label for="lastname">Last Name * </label><!-- second name data -->
-			<input type="text" name="lastname" id="lastname" size="40" onKeyUp="lastnameEntered(this);"/>
+			<label for="lastname">Last Name * </label><!-- last name data -->
+			<input type="text" name="lastname" id="lastname" size="40"/>
 		</p>
 		<p>
 			<label for="email">email Address * </label><!-- email data -->
-			<input type="text" name="email" id="email" size="50" onKeyUp="emailEntered(this);"/>
+			<input type="text" name="email" id="email" size="50"/>
 		</p>
 		<p>
-			<label for="phone">Phone </label><!-- phone data -->
-			<input type="text" name="phone" id="phone" size="10" onKeyUp="phoneEntered(this);"/>
+			<label for="mobile">Mobile </label><!-- mobile phone data -->
+			<input type="text" name="mobile" id="mobile" size="10"/>
 		</p>
 		<p>
 			<label for="comments">Questions/Comments</label><!-- comments data -->
-			<textarea name="comments" cols="50" rows="4" id="comments" onKeyUp="updateCharacters(10)"></textarea>
+			<textarea name="comments" cols="50" rows="4" id="comments"></textarea>
 		</p>
-		<div id="joinfree"><!-- advertising -->
+		<div id="joinfree"><!-- incentives available to members -->
 			<p>
 				By joining our supporters and volunteers, you will have access to :
 				<ul>
@@ -41,23 +41,20 @@
 					<li>lottery of backstage passes to meet our celebrity players</li>
 					<li>free performance programs</li>
 				</ul>
-				 Joining is free!! &nbsp; We are also very interested in developing young musicians.
+				 Joining is free!! &nbsp; We are also very interested in developing our young musicians.
 			</p>
-		</div>
-		<fieldset id="join">
+		</div><!-- end of incentives -->
+		<fieldset id="join"><!-- help us element and member tickbox-->
             <legend id="joinLegend">Help us Culture the North</legend>
-            <input name="join" type="checkbox" id="areaSchedule" value="schedule" onChange="checkArea()"/>
+            <input name="join" type="checkbox" id="helpUs" value="helpUs" />
             <label for="areaSchedule">I would like to join our Orchestral Supporters group</label>
-            
-            
-        </fieldset>
+        </fieldset><!-- end of help us element -->	
 		
-		<div id="submission">
-            <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
-            <input type="reset" value="Clear Form" name="Reset" id="Reset" />
+		<div id="submission"><!-- clear form or submit values -->
+            <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()"/>
             &nbsp; or &nbsp;
-            <input type="submit" value="Submit Form"/>
-        </div>
+			<input type="submit" value="Submit your details"/>
+        </div><!-- end of clear or submit -->
 		</form>
 	<script src="scriptsBRO.js"></script>
 </body>

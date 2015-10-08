@@ -1,4 +1,4 @@
-body {
+body { /* gradient background */
 	background: -webkit-linear-gradient(left, #037FEB, #AAC9EB); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #037FEB, #AAC9EB); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #037FEB, #AAC9EB); /* For Firefox 3.6 to 15 */
@@ -6,22 +6,22 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+h1{ /* form heading */
 	position: relative;
 	margin-left: 20px;
 	margin-top: 5px;
 }
-.request{
+.request{ /* introduction element */
 	position: relative;
 	margin-left: 20px;
 }
-#mainForm {
+#mainForm { /* form outline */
     border: thin white solid;
     border-radius: 15px;
     width: 720px;
-	height: 490px;
+	height: 500px;
 }
-#mainForm p label{
+#mainForm p label{ /* form labels */
 	position: relative;
 	top:3px;
 	left: 20px;
@@ -31,22 +31,22 @@ h1{
 	text-align: right;
 	display: block;
 }
-#mainForm p input{
+#mainForm p input{ /* form input boxes */
 	position: relative;
 	border: 1px orange solid;
 }
-#mainForm p textarea{
+#mainForm p textarea{ /* comments input box */
 	position: absolute;
 	left: 200px;
 	border: 1px orange solid;
 	
 }
-#join{
+#join{ /* join checkbox */
 	position: absolute;
 	top: 565px;
 	left: 40px;
 }
-#submission{
+#submission{ /* reset and submit buttons */
 	position: absolute;
 	top: 575px;
 	left: 466px;
@@ -56,7 +56,7 @@ h1{
 	padding: 10px;
 	background-color: blue;
 }
-#joinfree{
+#joinfree{ /* incentives element */
 	position: absolute;
 	top: 390px;
 	left: 85px;
@@ -66,9 +66,22 @@ h1{
 	background-color: blue;
 	color: white;
 }
-#joinfree p{
+#joinfree p{ /* incentives list */
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-
+@media only screen and (max-device-width: 480px) { /* change form to suit 4S iphone */
+	#mainForm { /* form outline */
+		height: 540px;
+	}
+	#joinfree{ /* incentives element */
+		top: 420px;
+	}
+	#join{ /* join checkbox */
+		top: 615px;
+}
+	#submission{ /* reset and submit buttons */
+		top: 625px;
+	}
+}
 
