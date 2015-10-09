@@ -1,3 +1,4 @@
+//contact form
 // check required fields have been set, return true/false depending on these
 function checkContactForm() {
 	var firstName = document.getElementById("firstname");
