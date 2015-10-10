@@ -61,7 +61,9 @@
       Join The Barrier Reef Orchestra </h1>
     <div id="form">
     <div id="member">
-      <h2>Contact Us</h2><br>
+      <h2>Become a Player<br>
+        <br>
+      </h2>
       <!-- heading -->
       <p class="request">Please fill out the information below &nbsp; (Required fields are shown by *)</p>
       <p class="request">We will get back to you as soon as possible<br>
@@ -69,28 +71,32 @@
       </p>
       <!-- instructions -->
       
-      <form action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php" method="post" name="cmainForm" id="cmainForm" onsubmit="return checkContactForm();">
-		
-		<p>
-			<label for="firstName">First Name * </label><!-- first name data -->
-			<input type="text" name="firstName" id="firstName" size="40" autofocus/>
-		</p>
-		<p>
-			<label for="lastName">Last Name * </label><!-- last name data -->
-			<input type="text" name="lastName" id="lastName" size="40"/>
-		</p>
-		<p>
-			<label for="cEmail">email Address * </label><!-- email data -->
-			<input type="text" name="cEmail" id="cEmail" size="40"/>
-		</p>
-		<p>
-			<label for="cMobile">Mobile </label><!-- mobile phone data -->
-			<input type="text" name="cMobile" id="cMobile" size="10"/>
-		</p>
-		<p>
-			<label for="cComments">Questions/Comments</label><!-- comments data -->
-			<textarea name="cComments" cols="50" rows="4" id="cComments"></textarea>
-		</p>
+      <form action="http://ditwebtsv.jcu.edu.au/~sci-­lmw1/forms.php" method="post" name="mainForm" class="mainForm" onsubmit="return checkForm();">
+        <p>
+          <label for="firstname">First Name * </label>
+          <!-- firstname data -->
+          <input type="text" name="firstname" class="name" autofocus onKeyUp="firstnameEntered(this);"/>
+        </p>
+        <p>
+          <label for="lastname">Last Name * </label>
+          <!-- second name data -->
+          <input type="text" name="lastname" class="name" onKeyUp="lastnameEntered(this);"/>
+        </p>
+        <p>
+          <label for="email">email Address * </label>
+          <!-- email data -->
+          <input type="text" name="email" class="email" onKeyUp="emailEntered(this);"/>
+        </p>
+        <p>
+          <label for="phone">Phone </label>
+          <!-- phone data -->
+          <input type="text" name="phone" class="phone" onKeyUp="phoneEntered(this);"/>
+        </p>
+        <p>
+          <label for="comments">Questions/Comments</label>
+          <!-- comments data -->
+          <textarea name="comments" rows="4" onKeyUp="updateCharacters(10)"></textarea>
+        </p>
         <div><!-- advertising -->
           <p> By joining our supporters and volunteers, you will have access to : </p>
           <ul>
@@ -102,43 +108,43 @@
           Joining is free!! &nbsp; We are also very interested in developing young musicians.<br>
           <br>
         </div>
-        <fieldset id="join"><!-- help us element and member tickbox-->
-            <legend id="joinLegend">Help us Culture the North</legend>
-            <input name="join" type="checkbox" id="helpUs" value="yes" />
-		    <label for="joinbox">I would like to join our Orchestral Supporters group</label>
-        
-		</fieldset><!-- end of help us element -->	
+        <fieldset>
+          <legend>Help us Culture the North</legend>
+          <input name="join" type="checkbox" id="areaSchedule" value="schedule" onChange="checkArea()"/>
+          <label for="areaSchedule">I would like to join our Orchestral Supporters group</label>
+        </fieldset>
         
         <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
-         <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()"/>
+        <input type="reset" value="Clear Form" name="Reset"/>
         &nbsp; or &nbsp;
         <input type="submit" value="Submit Form"/>
       </form>
+      <script src="scriptsBRO.js"></script> 
     </div>
     <div id="player">
       <h2>Become an Orchestral Benefactor</h2>
       <p>Please fill out the information below &nbsp; (Required fields are shown by *)</p>
       <p>We will contact you as soon as possible to arrange a time when you are free to interview us</p>
-      <form action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php" method="post" name="mainForm" class="mainForm" onsubmit="return checkBenefactorForm();">
+      <form action="http://ditwebtsv.jcu.edu.au/~sci-­lmw1/forms.php" method="post" name="mainForm" class="mainForm" onsubmit="return checkForm();">
         <p>
           <label for="firstname">First Name * </label>
-          <input type="text" name="firstname" id="firstname" size="40" autofocus/>
+          <input type="text" name="name" class="name" autofocus onKeyUp="nameEntered(this);"/>
         </p>
         <p>
           <label for="lastname">Last Name * </label>
-          <input type="text" name="lastname" id="lastname" size="40"/>
+          <input type="text" name="name" class="name" autofocus onKeyUp="nameEntered(this);"/>
         </p>
         <p>
           <label for="email">email Address * </label>
-          <input type="text" name="email" id="email" size="40"/>
+          <input type="text" name="name" class="email" autofocus onKeyUp="nameEntered(this);"/>
         </p>
         <p>
-          <label for="mobile">Mobile * </label>
-          <input type="text" name="mobile" id="mobile" size="10"/>
+          <label for="phone">Phone * </label>
+          <input type="text" name="name" class="phone" autofocus onKeyUp="nameEntered(this);"/>
         </p>
         <p>
           <label for="comments">Questions/Comments</label>
-          <textarea name="comments" cols="50" rows="4" id="comments"></textarea>
+          <textarea name="comments" rows="4" onKeyUp="updateCharacters(10)"></textarea>
         </p>
         <div>
           <p> By joining our benefactors, you will have access to : </p>
@@ -158,17 +164,17 @@
         </fieldset>
         <div> 
           <!--<input type="reset" value="Reset" name="Reset" id="Reset" onclick="return confirm('Reset all fields?')"/>-->
-           <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()"/>
+          <input type="reset" value="Clear Form" name="Reset"/>
           &nbsp; or &nbsp;
           <input type="submit" value="Submit Form"/>
         </div>
       </form>
+      <script src="scriptsBRO.js"></script> 
     </div>
     </div>
   </div>
   <div id="push"></div>
   <div id="footer"> &copy; 2015 www.nqorchestra.com.au.  All Rights Reserved. </div>
 </div>
-<script src="javaScript.js" type="text/javascript"></script> 
 </body>
 </html>
