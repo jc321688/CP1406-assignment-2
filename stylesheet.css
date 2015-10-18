@@ -95,7 +95,9 @@ a.current:link {
 }
 #home img{
 	width: 49%;
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 3px;
 }
 p.content {
 	padding: 5px;
@@ -187,11 +189,11 @@ h1 { /* home page h1 */
 	padding-left: 10px;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
+	
 }
 #news img {
 	max-width: 30%;
+	margin: 15px;
 	float: left;
 }
 #events {
@@ -228,7 +230,9 @@ h1 { /* home page h1 */
 	overflow-x: hidden;
 }
 #specialguests img, #lifemembers img { /* pad images people */
-	padding-right: 15px;
+	margin-right: 20px;
+	margin-top: 15px;
+	margin-left: 15px;
 }
 #honouredmembers img { /* pad images people */
 	padding-bottom: 0px;
@@ -253,8 +257,10 @@ h1 { /* home page h1 */
 #committee { /* set about us/committee members list position */
 }
 p.positions1 {
-	width: 145px;
+	margin-left: 80px;
+	width: 200px;
 	text-align: right;
+	font-size: 100%;
 	border-radius: 0px;
 	border-color: black;
 	display: block;
@@ -401,8 +407,13 @@ textarea {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
+
 .pmid {
-	border-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.pmidimg img{
+	margin-left: 3px;
 }
 .pbot {
 	border-top-left-radius: 0px;
